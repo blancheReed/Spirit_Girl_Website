@@ -12,9 +12,7 @@
   --gray: #c3c3c3;
 }
 
-/* CSS Reset */
-
-html {
+CSS Reset html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -151,7 +149,7 @@ header button {
 }
 
 .logo {
-  height: 300px;
+  height: 500px;
   display: flex;
 }
 
@@ -161,6 +159,75 @@ header button {
   align-items: center;
   justify-content: space-between;
 }
+
+/* characters button */
+/* 
+.characters-icon {
+  display: none;
+}
+
+.characters-icon {
+  height: 50px;
+}
+
+.logo {
+  height: 500px;
+  display: flex;
+}
+
+.mobile-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.characters-icon {
+  margin: 0;
+  padding: 0;
+}
+
+.characters-icon {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+}
+
+#Topics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.characters-icon {
+  transition: transform 0.7s ease-in-out;
+}
+
+.characters-icon:hover {
+  transform: rotate(360deg);
+}
+
+.characters-icon {
+  width: 70px;
+  height: 70px;
+} */
+/* 
+input[type='email'] {
+  padding: 10px;
+  border: 2px solid #314de4;
+  outline: none;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #314de4;
+} */
+
+/* .text {
+  font-size: 60px;
+  color: #314de4;
+  font-family: Arial;
+} */
 
 /* Hero */
 
@@ -189,142 +256,88 @@ header button {
   color: white;
 }
 
-/* Chapter 1  */
+/* Topics */
 
-#Chapters {
+.Item1,
+.Item2,
+.Item3,
+.Item4 {
   display: inline-block;
 }
 
-#Chapters .Writing_1 {
+#Topics article {
   padding: 32px 16px;
 }
 
 @media (min-width: 768px) {
-  #Chapters .Writing_1 {
-    padding: 12px;
+  .Item1,
+  .Item2,
+  .Item3,
+  .Item4 {
+    padding: 56px;
   }
 }
 
 @media (min-width: 768px) {
-  #Chapters .Writing_1 {
+  .Item1,
+  .Item2,
+  .Item3,
+  .Item4 {
     display: flex;
   }
 }
 
-#Chapters .Writing_1 h2 {
-  margin-bottom: 16px;
-  color: white;
+.Item1,
+.Item2,
+.Item3,
+.Item4,
+h2 {
+  margin-bottom: 24px;
 }
 
-#Chapters .Writing_1 p {
-  margin-bottom: 16px;
+.Item1,
+.Item2,
+.Item3,
+.Item4 {
+  margin-bottom: 18px;
 }
 
-#Chapters .Writing_1 {
+.Item1,
+.Item2,
+.Item3,
+.Item4 {
   background-color: var(--yellow);
   transition: all 0.3s ease;
 }
 
-#Chapters .Writing_1:hover {
+.Item1:hover,
+.Item2:hover,
+.Item3:hover,
+.Item4:hover {
   filter: contrast(150%);
 }
 
-#Chapters .Writing_1 .icon {
-  height: 250px;
+/* .Item1,
+.Item2,
+.Item3,
+.Item4 {
+  height: 120px;
+} */
+
+.Item1 {
+  background-color: palevioletred;
 }
 
-/* Chapter 2  */
-
-#Chapters .Writing_2 {
-  padding: 32px 16px;
+.Item2 {
+  background-color: greenyellow;
 }
 
-@media (min-width: 768px) {
-  #Chapters .Writing_2 {
-    padding: 12px;
-  }
+.Item3 {
+  background-color: blue;
 }
 
-@media (min-width: 768px) {
-  #Chapters .Writing_2 {
-    display: flex;
-  }
-}
-
-#Chapters .Writing_2 h2 {
-  margin-bottom: 16px;
-  color: white;
-}
-
-#Chapters .Writing_2 p {
-  margin-bottom: 16px;
-}
-
-#Chapters .Writing_2 {
-  background-color: var(--yellow);
-  transition: all 0.3s ease;
-}
-
-#Chapters .Writing_2:hover {
-  filter: contrast(150%);
-}
-
-#Chapters .Writing_2 .icon {
-  height: 250px;
-}
-
-/* Chapter 3  */
-
-#Chapters .Writing_3 {
-  padding: 32px 16px;
-}
-
-@media (min-width: 768px) {
-  #Chapters .Writing_3 {
-    padding: 12px;
-  }
-}
-
-@media (min-width: 768px) {
-  #Chapters .Writing_3 {
-    display: flex;
-  }
-}
-
-#Chapters .Writing_3 h2 {
-  margin-bottom: 16px;
-  color: white;
-}
-
-#Chapters .Writing_3 p {
-  margin-bottom: 16px;
-}
-
-#Chapters .Writing_3 {
-  background-color: var(--yellow);
-  transition: all 0.3s ease;
-}
-
-#Chapters .Writing_3:hover {
-  filter: contrast(150%);
-}
-
-#Chapters .Writing_3 .icon {
-  height: 250px;
-}
-
-/* Chapter 3  */
-
-#Chapters .Writing_1 {
-  background-color: var(--yellow);
-}
-
-#Chapters .Writing_2 {
-  background-color: var(--green);
-}
-
-#Chapters .Writing_3 {
-  background-color: var(--blue);
+.Item4 {
+  background-color: purple;
 }
 
 /* Contact section */
@@ -387,4 +400,32 @@ footer {
   color: var(--black);
   display: block;
   padding: 4px 16px;
+}
+
+/*Novel Page*/
+
+h1 {
+  display: inline-block;
+  text-decoration: underline;
+  text-justify: center;
+}
+
+#Novel {
+  padding: 32px 16px;
+  line-height: 1.5cm;
+  font-family: Verdana;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  #Novel {
+    padding: 32px;
+    line-height: 1.5cm;
+  }
+}
+
+@media (min-width: 768px) {
+  #Novel {
+    display: inline-block;
+  }
 }
